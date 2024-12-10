@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    /* line-height: 2rem;  */
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Media/headerbkg.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 30px;
+    width: 150px;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0  3rem ;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+nav ul li a:hover {
+    color:#ff4545;
+    transition: 0.5s;
+    /* width: 100%; */
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+/* ----------------scrollup-button-------------- */
+
+.scrlup-btn {
+    color: white;
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #ff4545;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.scrlup-btn.hidden {
+    display: none; /* Hide button when hidden class is added */
+}
+
+.scrlup-btn:hover {
+    transform: scale(1.1);
+}
+
+/* -------------about------------ */
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#about {
+    padding: 80px 0 ;
+    /* border: 2px solid white; */
+    line-height: 1.5rem;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+}
+
+.column1 {
+    flex-basis: 35%;
+}
+
+.column1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.column2 {
+    flex-basis: 60%;
+}
+
+.about-me-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.column2 p {
+    padding-top:2rem ;
+}
+
+.skill-experience {
+    margin: 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.skill-experience p {
+    /* content: ""; */
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.skill-experience p:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 300px;
+    height: 2px;
+    background: #f00;
+}
+
+.skill-experience p:hover {
+    color: #ff4545  ;
+}
+
+
+
+.list ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.list {
+    display: none;
+}
+
+.list
+
+/* -----------------projects------------- */
+
+
+#projects {
+    padding:30px 0 ;  
+}
+
+#projects h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.myprojects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    /* border: 2px solid white; */
+}
+
+.myprojects a {
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #212121;
+    transition: background-color 0.8s , transform 0.5s , color 0.5s;
+}
+
+.myprojects a:first-child{
+    /* background-image: url('/Media/Name-Entity-Recognition-with-NLTK-and-SpaCy-using-Python-5-i2tutorials.jpg'); */
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+}
+
+.myprojects a:nth-child(2) {
+    /* background-image: url('/Media/Name-Entity-Recognition-with-NLTK-and-SpaCy-using-Python-5-i2tutorials.jpg'); */
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.myprojects a:nth-child(3) {
+    /* background-image: url('/Media/Name-Entity-Recognition-with-NLTK-and-SpaCy-using-Python-5-i2tutorials.jpg'); */
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.myprojects a:last-child {
+    /* background-image: url('/Media/Name-Entity-Recognition-with-NLTK-and-SpaCy-using-Python-5-i2tutorials.jpg'); */
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.myprojects div {
+    padding: 60px;
+    text-align: center;
+    height: 35vh;
+    /* border: 2px solid white; */
+}
+
+.myprojects h3 ,p {
+    margin-bottom: 30px;
+}
+
+
+.myprojects a:hover {
+    transform: translateY(-15px);
+    background-color: #ff4545;
+    color: black;
+}
+
+/* -----------------experience-------------------- */
+
+#experience {
+    padding: 30px 0;
+}
+
+#experience h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.experience1 {
+    margin-top: 50px;
+    line-height: 2rem;
+}
+
+.experience1 {
+    border: 2px solid silver;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.experience1:hover {
+    transform: scale(1.1);
+    background-color:#212121;
+
+}
+
+/* --------------------techs--------------------- */
+
+/* .teams .carouse1 .card img{
+    height: 150px;
+    width: 1500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid red;
+} */
+
+
+
+
+
+
+
+/* ------------------footer------------------------ */
+
+#contact {
+    width: 100%;
+    /* height: 50vh; */
+    background-color:#212121
+}
+
+.row {
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    margin-top: 3rem;
+    padding: 0  2rem;
+    font-size: 20px;
+    color: white;
+}
+
+.social-links a:hover {
+    color: #ff4545;
+    transition: 0.5s;
+}
+
+.cv {
+    padding-left: 4.4rem;
+    margin: 3rem 0; 
+}
+
+.cv a {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px;
+    background-color: white; 
+    color:#212121; 
+    text-decoration: none;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, transform 0.5s ease; 
+}
+
+.cv a:hover {
+    background-color:#ff4545; /* Hover background color */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input ,form textarea {
+    width: 100%;
+    padding: 1.1rem;
+    margin: 3px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+#form_btn {
+    padding: 10px 40px;
+    margin-left:3px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight:bold ;
+    cursor: pointer;
+}
+
+#form_btn:hover {
+    background-color: #ff4545;
+    transition: background-color 0.5s;
+}
+
+footer>p {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #212121;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+

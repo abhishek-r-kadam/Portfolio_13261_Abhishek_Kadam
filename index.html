@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./Media/a-solid.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#home">
+        <div class="scrlup-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </a>
+
+    <header id="home">
+        <div class="container">
+            <nav>
+                <a href=""><img src="./Media/abhishek-logo.jpg" alt="logo" class="logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I am <span style="color: #ff4545;">Abhishek</span> Kadam <br> From Mumbai</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ----------------about--------------- -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="column1">
+                        <img src="./Media/low-key-portrait-modern-business-person.jpg" alt="">
+                    </div>
+                    <div class="column2">
+                        <h1 class="about-me-title"> <span style="color: #ff4545;">About</span> Me</h1>
+                        <br>
+                        <p>I am a passionate Data Scientist with expertise in predictive modeling, data visualization,
+                            and statistical analysis. I love turning raw data into actionable insights, enabling
+                            data-driven decision-making for businesses.</p>
+
+                        <div class="skill-experience">
+                            <p class="se" onclick="opentab('skills')">Skills</p>
+                            <p class="se" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="list" id="skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>Machine Learning</li>
+                                <li>Deep Learning</li>
+                                <li>Generative AI</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="list" id="education">
+                            <ul class="education">
+                                <li>10th SSC 80%</li>
+                                <li>12th HSC 70%</li>
+                                <li>BE MU 65%</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------projects--------------------- -->
+        <section id="projects">
+            <div class="container">
+                <h1><span style="color: #ff4545;">My</span> Projects</h1>
+                <div class="myprojects">
+
+                    <a href="https://github.com/abhishek-r-kadam/Sentiment_Analysis" target="_blank">
+                        <div>
+
+                            <h3>Advanced Sentiment Analysis</h3>
+                            <p>Implemented advanced sentiment analysis techniques for more accurate insights.</p>
+                            <p> Tools:
+                                Python and NLTK.</p>
+
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/abhishek-r-kadam/Survival_Prediction_Titanic" target="_blank">
+                        <div>
+                            <h3>Titanic Survival Prediction</h3>
+                            <p>Built a predictive model to determine passenger survival probabilities using logistic
+                                regression. </p>
+                            <p> Tools: Python and Pandas.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/abhishek-r-kadam/Sentiment_Analysis" target="_blank">
+                        <div>
+
+                            <h3>Advanced Sentiment Analysis</h3>
+                            <p>Implemented advanced sentiment analysis techniques for more accurate insights. </p>
+                            <p>Tools:
+                                Python and NLTK.</p>
+                        </div>
+                    </a>
+
+                    <a href="" target="_blank">
+
+                        <div>
+                            <h3>Cross-Selling Prediction</h3>
+                            <p>Built model to predict customer preferences and recommend products, for effective
+                                cross-selling. </p>
+                            <p> Tools: Python, Scikit-Learn, and
+                                Tableau.</p>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------experience---------------------- -->
+        <section id="experience">
+            <div class="container">
+                <h1><span style="color: #ff4545;">My</span> Experience</h1>
+
+                <div class="experience1">
+                    <h2>Data Scientist at <span style="color: #ff4545;">Neo</span>Soft</h2>
+                    <h4 class="years">December 2024 – Present</h4>
+                    <p>
+                        Developed predictive models and recommendation engines to enhance marketing strategies and user
+                        engagement.
+                        Achieved a 15% improvement in conversion rates and a 20% boost in user engagement. Created
+                        interactive dashboards using Tableau and Power BI, enabling data-driven decision-making across
+                        various departments.
+                    </p>
+                </div>
+
+                <div class="experience1">
+                    <h2>Data Analyst at <span style="color: #ff4545;">Momo</span>soft</h2>
+                    <h4 class="years">June 2019 – November 2024</h4>
+                    <p>
+                        Analyzed large datasets to uncover actionable insights that influenced leadership strategies.
+                        Streamlined reporting processes by automating workflows, achieving a 40% reduction in reporting
+                        time. Collaborated with cross-functional teams to implement data-driven strategies, enhancing
+                        operational efficiency and improving business outcomes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- ----------------------------contact------------------------- -->
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1><span style="color: #ff4545;">Contact</span> Me</h1>
+
+                    <div class="social-links">
+                        <a href="https://github.com/abhishek-r-kadam"><i class="fab fa-github fa-2xl"></i></a>
+                        <a href="https://linkedin.com/in/abhishek-r-kadam"><i class="fab fa-linkedin fa-2xl"></i></a>
+                        <a href="mailto:kadam.abhishek@neosoftmail.com"><i class="fas fa-envelope fa-2xl"></i></a>
+                    </div>
+                    <div class="cv">
+                        <a href="./Media/abhishek-kadam.pdf" download="" id="cv">Download CV</a>
+                    </div>
+
+                </div>
+                <!-- <div class="contact-right">
+                    <form action="">
+                        <input type="text" id="name" onkeyup="validate1()" name="Name" placeholder="Your Name" required>
+                        <input type="text" id="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" cols="40" style="resize: none;" id="message" placeholder="Your Message"></textarea>
+                        <button id="form_btn" type="submit">Submit</button>
+                    </form>
+                </div> -->
+
+                <div class="contact-right">
+                    <form action="" onsubmit="return validateAll(event);" novalidate>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <div id="errorName" style="color: red;"></div>
+
+                        <input type="text" id="email" name="email" placeholder="Your Email" required>
+                        <div id="errorEmail" style="color: red;"></div>
+
+                        <textarea name="Message" rows="6" cols="40" style="resize: none;" id="message"
+                            placeholder="Your Message"></textarea>
+                        <div id="errorMessage" style="color: red;"></div>
+                        <button id="form_btn"  type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <p>&copy; 2024 Abhishek Kadam. All Rights Reserved.</p>
+        </div>
+        
+
+    </footer>
+
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/portfolio.js"></script>
+    
+</body>
+
+</html>
